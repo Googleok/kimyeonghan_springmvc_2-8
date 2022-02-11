@@ -29,7 +29,8 @@ public class SpringUploadController {
 
     @PostMapping("/upload")
     public String saveFile(@RequestParam String itemName,
-                           @RequestParam MultipartFile file, HttpServletRequest request) throws IOException {
+                           @RequestParam MultipartFile file,
+                           HttpServletRequest request) throws IOException {
 
         log.info("request={}", request);
         log.info("itemName={}", itemName);
